@@ -12,21 +12,32 @@
 </head>
 <body>
     <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-        <form onsubmit="event.preventDefault();">
+        
+        <form onsubmit="event.preventDefault()">
+          <h5 class="text-primary">BMI CALCULATOR</h5>
             <div class="mb-3">
               <label for="height" class="form-label">HEIGHT</label>
-              <input type="text" class="form-control" id="height" placeholder="Enter your height">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <input type="text" class="form-control" id="height">
+              <div class="form-text">Enter your height in <b>Centimeter</b></div>
             </div>
             <div class="mb-3">
-              <label for="weight" class="form-label">WEIGHT</label>
+              <label for="weight" class="form-label" >WEIGHT</label>
               <input type="text" class="form-control" id="weight">
+              <div class="form-text">Enter your weight in <b>Kilogram</b></div>
             </div>
-            <div class="mb-3">
-              <h3 id="bmi"></h3>
+            <div class="mb-3 bg-light">
+              <h4 id="result-bmi" class="text-center text-primary"></h4>
+              <p id="remark" class="text-center text-primary"></p>
             </div>
-            <button class="btn btn-primary" id="btn">Submit</button>
+            <button class="btn btn-primary " id="btn">Submit</button>
         </form>
+
+
+
+
+
+
+        
 
     </div>
 
