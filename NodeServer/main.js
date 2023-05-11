@@ -12,7 +12,14 @@ const server = http.createServer((req, res) => {
     }
     else if (req.url === "/script.js") {
         fs.readFile("script.js", (err, data) => {
-            res.writeHead(200, {"Content-Type": "text/javascript"})
+            res.writeHead(200, {"Content-Type": "application/javascript"})
+            res.write(data);
+            res.end();
+        })
+    }
+    else if (req.url === "/style.css") {
+        fs.readFile("style.css", (err, data) => {
+            res.writeHead(200, {"Content-Type": "text/css"})
             res.write(data);
             res.end();
         })

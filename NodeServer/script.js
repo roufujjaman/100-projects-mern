@@ -1,2 +1,1 @@
-alert("This Page Is Hosted @localhost:3000");
-
+console.log("hello world");
